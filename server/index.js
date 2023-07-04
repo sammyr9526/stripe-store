@@ -12,6 +12,7 @@ const stripe = new Stripe(
 );
 
 app.use(cors({ origin: "https://stripe-store-6kdg.onrender.com" })); //configure the cors
+
 app.use(express.json());
 
 app.post("/api/checkout", async (req, res) => {
